@@ -1,0 +1,25 @@
+<h2>By Capital</h2>
+<hr>
+<div class="row">
+    <div class="col">
+      <app-input-component
+       (onSend)="search($event)"
+       ></app-input-component>
+    </div>
+</div>
+
+<hr>
+<ng-template [ngIf]="error" [ngIfElse]="alert">
+    <div class="row">
+        <div class="col">
+         <app-table-component [data]="countriesCapital"></app-table-component>
+        </div>
+    </div>
+</ng-template>
+
+
+<ng-template #alert>
+    <div class="alert alert-danger">
+        Don't find Anything {{value}}
+    </div>
+</ng-template>

@@ -1,0 +1,46 @@
+<ng-template [ngIf]="!data" [ngIfElse]="response">
+    <div class="alert alert-danger mt-3">
+        No info found...
+    </div>
+</ng-template>
+
+<ng-template #response>
+   <div class="row">
+    <div class="col-12">
+        <h1>Pais: {{codeCountry.name.official}}</h1>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-4">
+        <h3>Flag</h3>
+        <img class="img__col" [src]="codeCountry.flags.svg" [alt]="codeCountry.name.common"/>
+    </div>
+    <div class="col">
+        <h3>Information</h3>
+        <ul class="list-group">
+            <li class="list-group-item">
+                Population: {{codeCountry.population | number}}
+            </li>
+            <li class="list-group-item">
+                Area: {{codeCountry.area}}
+            </li>
+            <li class="list-group-item">
+                Alpha Code : {{codeCountry.cca2}}
+            </li>
+        </ul>
+    </div>
+    <h3>Translations</h3>
+    <div class="row">
+        <div class="col">
+            <span class="badge bg-primary">{{codeCountry.translations['ara'].common}}</span>
+            <span class="badge bg-primary">{{codeCountry.translations['ces'].common}}</span>
+            <span class="badge bg-primary">{{codeCountry.translations['cym'].common}}</span>
+            <span class="badge bg-primary">{{codeCountry.translations['deu'].common}}</span>
+            <span class="badge bg-primary">{{codeCountry.translations['est'].common}}</span>
+            <span class="badge bg-primary">{{codeCountry.translations['jpn'].common}}</span>
+        </div>
+    </div>
+
+   </div>
+</ng-template>
+

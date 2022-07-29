@@ -1,0 +1,22 @@
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>#ID</th>
+            <th>Flag</th>
+            <th>Name</th>
+            <th>Population</th>
+            <th>Information</th>
+        </tr>
+    </thead>
+    <tbody>
+       <tr *ngFor="let arg of countries; let i=index;">
+        <th>{{i + 1}}</th>
+        <th><img [src]="arg.flags.svg" class="img__th"/></th>
+        <th> {{arg.name.common || arg.name}} - {{arg.capital}}</th>
+        <th>{{arg.population | number}}</th>
+        <th>
+            <a [routerLink]="['/country',arg.cca2]">Ver...</a>
+        </th>
+       </tr>
+    </tbody>
+</table>

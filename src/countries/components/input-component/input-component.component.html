@@ -1,0 +1,10 @@
+<form (ngSubmit)="sendData()" autocomplete="off">
+    <input
+    type="text"
+     name="data" 
+     class="form-control"
+      placeholder="Search Country"
+      [(ngModel)]="arg"
+      (input)="keyPress()"
+      />
+ </form>

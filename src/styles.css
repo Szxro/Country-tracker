@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img__col,
+.img__th{
+    max-width: 250px;
+}
+span{
+    margin-right: 0.5em;
+}
