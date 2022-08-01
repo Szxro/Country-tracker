@@ -1,5 +1,5 @@
 # Country Rest :memo:
-In this project you can search for a country and find some info of it like name, capital, alphaCode, area ,flag and some traductions of their name.
+In this project you can search for a country using an api and find some info of it like name, capital, alphaCode, area ,flag and some traductions of their name.
 
 # Preview :eyes:
 
@@ -27,6 +27,7 @@ In this project you can search for a country and find some info of it like name,
 * Angular (Basic Routing)
 * Some Bootstrap Styles
 * Animated.style
+* Api used: https://restcountries.com/
 
 # Prerequisites 📑
 1. Git clone this repostiory
