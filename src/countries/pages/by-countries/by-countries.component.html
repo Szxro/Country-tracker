@@ -9,6 +9,18 @@
        ></app-input-component>
     </div>
 </div>
+<ng-template [ngIf]="sugg">
+    <ul class="list-group">
+        <li 
+        class="list-group-item list-group-item-action"
+        *ngFor="let item of arrSuggestion"
+        >
+           <a class="nav-link" [routerLink]="['/country',item.cca2]">
+            {{item.name.common}}
+           </a>
+        </li>
+    </ul>
+</ng-template>
 
 <hr>
 <ng-template [ngIf]="error" [ngIfElse]="alert">

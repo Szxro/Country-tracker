@@ -1,1 +1,25 @@
-<p>by-region works!</p>
+<h3>Search by Region: {{activeRegion | titlecase}}</h3>
+<hr>
+<h2>Select a Region</h2>
+<div class="row">
+    <div class="col">
+        <button 
+        type="button"
+        *ngFor="let item of regions"
+        class="btn btn-outline-primary"
+        [class]="addClass(item)"
+        (click)="getRegion(item)"
+        >
+    {{item | titlecase}}
+    </button>
+    </div>
+</div>
+
+<ng-template [ngIf]="arrRegion.length > 0">
+    <div class="row">
+        <div class="col">
+         <app-table-component [data]="arrRegion"></app-table-component>
+        </div>
+    </div>
+</ng-template>
+

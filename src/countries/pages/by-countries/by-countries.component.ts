@@ -12,12 +12,15 @@ export class ByCountriesComponent {
   error:boolean=true;
   value:string='';
   countries:CountryResponse[]=[];
+  arrSuggestion:CountryResponse[]=[];
+  sugg:boolean=false;
 
   constructor(public countryRest:CountryRestService) { }
   
   search(arg:string):void{
    if(!arg) return;
    this.value=arg;
+   this.sugg=false;
    this.countryRest.getData(arg)
    .subscribe((country)=>{
     this.countries=country;
@@ -26,7 +29,11 @@ export class ByCountriesComponent {
   }
 
   suggestions(term:string){
+    this.sugg=true;
     this.error = true;
+    this.value=term;
+    this.countryRest.getData(term)
+    .subscribe(resp => this.arrSuggestion = resp.slice(0,5),(err)=>this.arrSuggestion=[]);
   }
 
 }
