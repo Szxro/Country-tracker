@@ -1,27 +1,45 @@
-# CountryRest
+# Country Rest :memo:
+In this project you can search for a country and find some info of it like name, capital, alphaCode, area ,flag and some traductions of their name.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.7.
+# Preview :eyes:
 
-## Development server
+- **Autocomplete Part**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+![image](https://user-images.githubusercontent.com/103012492/182185852-0165c24d-8d51-4337-8f6e-b7b73b2716ad.png)
 
-## Code scaffolding
+- **Hit enter to find all the countries with the same info or similar**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![image](https://user-images.githubusercontent.com/103012492/182186106-21eb38b8-503b-4d75-8781-f389081a339c.png)
 
-## Build
+- **Filter By Region**
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+![image](https://user-images.githubusercontent.com/103012492/182186239-0d4de1f3-c8d5-4257-98d0-075be39a440c.png)
 
-## Running unit tests
+- **Just the Capital of the Country**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![image](https://user-images.githubusercontent.com/103012492/182186357-8fdf858e-9625-4269-8317-20586d5dcd45.png)
 
-## Running end-to-end tests
+- **Just the info of a country**
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+![image](https://user-images.githubusercontent.com/103012492/182186972-3904471f-2843-40aa-ae34-b43dbf5f83cd.png)
 
-## Further help
+# Technologies used in this project 👨‍💻
+* Angular (Basic Routing)
+* Some Bootstrap Styles
+* Animated.style
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Prerequisites 📑
+1. Git clone this repostiory
+2. Know Typescript and some Angular concepts
+3. Know some Bootstrap tags
+
+# People involved in this project ⌨️
+* @Szxro 
+
+# Hiring (Emails) 👌
+If you want to hire me , you only have to write to me.
+- szxrocode@gmail.com (@Szxro)
+
+
+
+
